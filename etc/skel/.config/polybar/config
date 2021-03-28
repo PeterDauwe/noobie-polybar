@@ -246,7 +246,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = xfce4 arch-aur-updates wireless-network
 ;modules-center = kernel
-modules-right = arco_extra date pavolume
+modules-right = date pavolume
 
 
 separator = |
