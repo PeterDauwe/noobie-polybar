@@ -142,7 +142,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Noto Sans:size=14;0"
 
 modules-left = i3 sept cpu-graph
-modules-center = google youtube sept firefox explorer github gimp
+modules-center = google youtube sept firefox explorer  gimp dis sept 
 modules-right =  volume sept rofi sept memory4 sept filesystem sept arch-updates
 
 separator =  
@@ -244,9 +244,9 @@ font-3 = "Noto Sans Mono:size=10;0"
 ;modules-center = networkspeeddown networkspeedup
 ;modules-right = filesystem
 
-modules-left = xfce4 arch-aur-updates wireless-network
+modules-left = jgmenu helpdoc arch-aur-updates wireless-network
 ;modules-center = kernel
-modules-right = date pavolume
+modules-right = date pavolume battery
 
 
 separator = |
@@ -1418,7 +1418,7 @@ bar-empty = ─
 [module/battery]
 ;https://github.com/jaagr/polybar/wiki/Module:-battery
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = AC0
 full-at = 100
 
@@ -1726,14 +1726,35 @@ format-prefix-foreground = #0084FF
 
 ################################################################################
 
-[module/xfce4]
+[module/jgmenu]
 type = custom/script
 interval = 120
-exec = echo "   START"
+exec = echo "   APPFINDER"
+
+
+
+;click-left = "jgmenu_run >/dev/null 2>&1 &"
+
 click-left = "xfce4-appfinder"
 format-foreground = ${colors.foreground}
 ;format-foreground = #ff0000
 format-background = ${colors.background}
+
+
+
+
+
+
+[module/helpdoc]
+type = custom/script
+interval = 120
+exec = echo "  HELPDOC"
+;click-left = "jgmenu_run >/dev/null 2>&1 &"
+click-left = "~/.config/i3/scripts/readme.sh"
+format-foreground = ${colors.foreground}
+;format-foreground = #ff0000
+format-background = ${colors.background}
+
 
 ################################################################################
 
@@ -2085,6 +2106,8 @@ content-background = ${colors.background}
 content-foreground = ${colors.foreground}
 click-left = exec rofi -theme fancy -show drun -show-icons -lines 9 -columns 3
 click-right = exec rofi -theme fancy -show combi -show-icons -lines 6 -columns 4
+
+;click-right = exec xfce4-appfinder
 
 ################################################################################
 
