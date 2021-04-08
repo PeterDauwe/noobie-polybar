@@ -142,7 +142,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Noto Sans:size=14;0"
 
 modules-left = i3 sept cpu-graph
-modules-center = google youtube freetube sept firefox explorer github gimp dis sept manpages
+modules-center = google youtube sept firefox explorer  gimp dis sept 
 modules-right =  volume sept rofi sept memory4 sept filesystem sept arch-updates
 
 separator =  
@@ -246,7 +246,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 
 modules-left = jgmenu helpdoc arch-aur-updates wireless-network
 ;modules-center = kernel
-modules-right = arco_extra date pavolume
+modules-right = date pavolume
 
 
 separator = |
