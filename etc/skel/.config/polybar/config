@@ -142,7 +142,7 @@ font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Noto Sans:size=14;0"
 
 modules-left = i3 sept cpu-graph
-modules-center = google youtube sept firefox explorer  gimp dis sept 
+modules-center = google youtube firefox explorer  gimp dis
 modules-right =  volume sept rofi sept memory4 sept filesystem sept arch-updates
 
 separator =  
